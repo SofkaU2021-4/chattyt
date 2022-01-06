@@ -16,10 +16,10 @@ export default class HomePage extends Component {
                 A great place to share your thoughts with friends
               </p>
               <div className="mt-20">
-                <Link className="btn__btn-primary-px-5-mr-3" to="/signup">
+                <Link className=" bg-orange-300 border-gray-800 border-1  rounded-full px-5 py-1 mr-5" to="/signup">
                   Create New Account
                 </Link>
-                <Link className="btn px-5" to="/login">
+                <Link className=" bg-fuchsia-600  border-gray-800 border-1  rounded-full px-5 py-1" to="/login">
                   Login to Your Account
                 </Link>
               </div>

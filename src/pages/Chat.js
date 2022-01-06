@@ -75,11 +75,11 @@ export default class Chat extends Component {
     return (
       <div>
         <Header />
-        <div className="chat-area" ref={this.myRef}>
+        <div className="" ref={this.myRef}>
           {/* loading indicator */}
           {this.state.loadingChats ? (
-            <div className="spinner-border text-success" role="status">
-              <span className="sr-only">Loading...</span>
+            <div className="" role="status">
+              <span className="">Loading...</span>
             </div>
           ) : (
             ""
@@ -90,13 +90,13 @@ export default class Chat extends Component {
               <p
                 key={chat.timestamp}
                 className={
-                  "chat-bubble " +
+                  "" +
                   (this.state.user.uid === chat.uid ? "current-user" : "")
                 }
               >
                 {chat.content}
                 <br />
-                <span className="chat-time float-right">
+                <span className="">
                   {this.formatTime(chat.timestamp)}
                 </span>
               </p>
@@ -105,21 +105,21 @@ export default class Chat extends Component {
         </div>
         <form onSubmit={this.handleSubmit} className="mx-3">
           <textarea
-            className="form-control"
+            className=""
             name="content"
             onChange={this.handleChange}
             value={this.state.content}
           ></textarea>
           {this.state.error ? (
-            <p className="text-danger">{this.state.error}</p>
+            <p className="r">{this.state.error}</p>
           ) : null}
-          <button type="submit" className="btn btn-submit px-5 mt-4">
+          <button type="submit" className=" px-5 mt-4">
             Send
           </button>
         </form>
         <div className="py-5 mx-3">
           Login in as:{" "}
-          <strong className="text-info">{this.state.user.email}</strong>
+          <strong className="">{this.state.user.email}</strong>
         </div>
       </div>
     );

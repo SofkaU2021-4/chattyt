@@ -41,18 +41,18 @@ export default class SignUp extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="">
         <form className="mt-5 py-5 px-5" onSubmit={this.handleSubmit}>
           <h1>
             Sign Up to
-            <Link className="title ml-2" to="/">
+            <Link className="" to="/">
               Chatty
             </Link>
           </h1>
-          <p className="lead">Fill in the form below to create an account.</p>
-          <div className="form-group">
+          <p className="">Fill in the form below to create an account.</p>
+          <div className="">
             <input
-              className="form-control"
+              className=""
               placeholder="Email"
               name="email"
               type="email"
@@ -60,9 +60,9 @@ export default class SignUp extends Component {
               value={this.state.email}
             ></input>
           </div>
-          <div className="form-group">
+          <div className="">
             <input
-              className="form-control"
+              className=""
               placeholder="Password"
               name="password"
               onChange={this.handleChange}
@@ -70,18 +70,18 @@ export default class SignUp extends Component {
               type="password"
             ></input>
           </div>
-          <div className="form-group">
+          <div className="">
             {this.state.error ? (
-              <p className="text-danger">{this.state.error}</p>
+              <p className="">{this.state.error}</p>
             ) : null}
-            <button className="btn btn-primary px-5" type="submit">
+            <button className=" px-5" type="submit">
               Sign up
             </button>
           </div>
           <p>You can also sign up with any of these services</p>
-          <div className="form-group">
+          <div className="">
             <button
-              className="btn__btn-danger_mr-2"
+              className=""
               type="button"
               onClick={this.googleSignIn}
             >

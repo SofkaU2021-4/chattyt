@@ -49,16 +49,16 @@ export default class Login extends Component {
         >
           <h1>
             Login to 
-            <Link className="title_ml-2" to="/">
+            <Link className="" to="/">
               Chatty
             </Link>
           </h1>
-          <p className="lead">
+          <p className="">
             Fill in the form below to login to your account.
           </p>
-          <div className="form-group">
+          <div className="">
             <input
-              className="form-control"
+              className=""
               placeholder="Email"
               name="email"
               type="email"
@@ -66,9 +66,9 @@ export default class Login extends Component {
               value={this.state.email}
             />
           </div>
-          <div className="form-group">
+          <div className="">
             <input
-              className="form-control"
+              className=""
               placeholder="Password"
               name="password"
               onChange={this.handleChange}
@@ -76,18 +76,18 @@ export default class Login extends Component {
               type="password"
             />
           </div>
-          <div className="form-group">
+          <div className="">
             {this.state.error ? (
-              <p className="text-danger">{this.state.error}</p>
+              <p className="">{this.state.error}</p>
             ) : null}
-            <button className="btn btn-primary px-5" type="submit">
+            <button className="" type="submit">
               Login
             </button>
           </div>
           <p>You can also log in with a google account</p>
-          <div className="form-group">
+          <div className="">
           <button
-            className="btn__btn-danger_mr-2"
+            className=""
             type="button"
             onClick={this.googleSignIn}
           >
